@@ -1,0 +1,54 @@
+/* General Styles */
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#flipbook {
+    width: 1200px;
+    height: 900px;
+    margin: 20px auto;
+}
+
+.page {
+    background-color: #fff;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Navigation Arrow Styles */
+.nav-arrow {
+    position: fixed; /* Fixed positioning to stay on screen edges */
+    top: 50%; /* Vertically centered */
+    transform: translateY(-50%); /* Adjust for exact centering */
+    font-size: 40px; /* Size of the arrow */
+    color: #fff; /* White color for visibility on dark background */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px 15px; /* Padding for clickable area */
+    cursor: pointer; /* Hand cursor on hover */
+    user-select: none; /* Prevent text selection */
+    z-index: 1000; /* Ensure arrows are above flipbook */
+}
+
+#prev-arrow {
+    left: 20px; /* Distance from left edge */
+}
+
+#next-arrow {
+    right: 20px; /* Distance from right edge */
+}
+
+.nav-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
